@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Lato:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
+
+#root {
+  overflow-x: hidden;
+  background-color: black;
+  min-height: 100vh;
+}
+
+span {
+  font-family: "Oswald", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+nav .navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+nav .navbar .bar {
+  height: 6px;
+  width: 30px;
+  background-color: white;
+}
+
+nav .cod-nav {
+  position: absolute;
+  top: 0;
+  left: 100vw;
+  transition: 1.3s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: hidden;
+}
+nav .cod-nav.open {
+  left: 0;
+  transition: 1.3s ease-in-out;
+}
+
+nav .cod-nav .nav-links {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+nav .cod-nav .nav-links span {
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+}
+nav .cod-nav .nav-links a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+nav .cod-nav .nav-links.contact-nav {
+  background-image: url(../public/city.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav .cod-nav .nav-links.freelancing-nav {
+  background-image: url(../public/mountains.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav .cod-nav .nav-links.blogs-nav {
+  background-image: url(../public/lights.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+nav .cod-nav .nav-links.about-nav {
+  background-image: url(../public/tokyo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+nav .cod-nav .nav-links.gallery-nav {
+  background-image: url(../public/error.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+nav .cod-nav .nav-links.home-nav {
+  background-image: url(../public/soccer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home,
+.about,
+.freelancing,
+.contact,
+.blogs,
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.home .image img,
+.about .image img,
+.freelancing .image img,
+.contact .image img,
+.blogs .image img,
+.gallery .image img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: flex;
+}
+.home .info,
+.about .info,
+.freelancing .info,
+.contact .info,
+.blogs .info,
+.gallery .info {
+  flex: 6;
+  padding: 0 30px;
+}
+.home .image,
+.about .image,
+.freelancing .image,
+.contact .image,
+.blogs .image,
+.gallery .image {
+  flex: 1;
+}
+/* .home h1 {
+  text-align: center;
+} */
+.home {
+  background-color: #edeee9;
+  color: #334b3c;
+}
+.about {
+  background-color: #2e122d;
+  color: #ee4540;
+}
+.gallery {
+  background-color: #fc4909;
+}
+.contact {
+  background-color: #061824;
+}
+.freelancing {
+  background-color: #31352f;
+}
+.blogs {
+  background-color: #382bdc;
+}
