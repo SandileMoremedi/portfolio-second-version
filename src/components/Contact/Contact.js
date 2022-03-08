@@ -72,3 +72,5 @@ function Contact() {
 }
 
 export default Contact;
+
+// https://www.patreon.com/sandilemoremedi

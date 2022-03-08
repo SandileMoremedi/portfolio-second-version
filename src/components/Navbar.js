@@ -7,7 +7,7 @@ export default function Navbar({ nav, setNav, handleNav }) {
   return (
     <>
       <nav>
-        <div className="navbar" onClick={handleNav}>
+        <div className="navbar" data-testid="navbar" onClick={handleNav}>
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>

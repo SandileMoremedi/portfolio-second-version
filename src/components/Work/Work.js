@@ -15,12 +15,7 @@ export default function Gallery() {
           <div className="gallery-items">
             <div className="item">
               <div className="item-image">
-                <img
-                  src="/portfolio-one.png"
-                  width="100%"
-                  height="auto"
-                  alt=""
-                />
+                <img src="/portfolio.png" width="100%" height="auto" alt="" />
               </div>
               <div className="item-para">
                 <div className="item-links">
@@ -35,7 +30,12 @@ export default function Gallery() {
             </div>
             <div className="item">
               <div className="item-image">
-                <img src="/project.png" width="100%" height="auto" alt="" />
+                <img
+                  src="/other-project.png"
+                  width="100%"
+                  height="auto"
+                  alt=""
+                />
               </div>
               <div className="item-para">
                 <div className="item-links">
@@ -50,7 +50,12 @@ export default function Gallery() {
             </div>
             <div className="item">
               <div className="item-image">
-                <img src="/orange.png" width="100%" height="auto" alt="" />
+                <img
+                  src="/orange-project.png"
+                  width="100%"
+                  height="auto"
+                  alt=""
+                />
               </div>
               <div className="item-para">
                 <div className="item-links">
