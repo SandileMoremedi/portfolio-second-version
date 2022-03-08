@@ -3,7 +3,6 @@ import About from "./components/About/About";
 import Gallery from "./components/Work/Work";
 import Contact from "./components/Contact/Contact";
 import Freelancing from "./components/Freelancing/Freelancing";
-import Blogs from "./components/Blogs/Blogs";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/freelancing" element={<Freelancing />} />
-        <Route path="/blogs" element={<Blogs />} />
       </Routes>
     </div>
   );
