@@ -28,6 +28,7 @@ body {
   color: white;
   overflow-x: hidden;
   width: 100vw;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -38,7 +39,7 @@ nav {
   padding: 0 50px;
   position: relative;
 }
-@media (max-height: 850px) {
+@media (max-width: 850px) {
   nav .cod-nav {
     display: flex;
     flex-direction: column !important;
@@ -256,6 +257,8 @@ nav .cod-nav .nav-links.home-nav {
   align-items: center;
   padding: 10px 20px;
   cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
 
 .freelancing .item-links span {
@@ -267,6 +270,12 @@ nav .cod-nav .nav-links.home-nav {
   align-items: center;
   padding: 10px 20px;
   cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.freelancing .item-links a,
+.gallery .item-links a {
+  text-decoration: none;
 }
 
 .form-parent {

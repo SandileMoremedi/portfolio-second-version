@@ -4,10 +4,16 @@ import Gallery from "./components/Work/Work";
 import Contact from "./components/Contact/Contact";
 import Freelancing from "./components/Freelancing/Freelancing";
 import { Route, Routes } from "react-router-dom";
-
+import Navbar from "./components/Navbar";
+import { useState } from "react";
 function App() {
+  const [nav, setNav] = useState(false);
+  function handleNav() {
+    setNav(!nav);
+  }
   return (
-    <div className="wrapper">
+    <>
+      <Navbar nav={nav} setNav={setNav} handleNav={handleNav} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -15,7 +21,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/freelancing" element={<Freelancing />} />
       </Routes>
-    </div>
+    </>
   );
 }
 
