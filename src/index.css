@@ -170,8 +170,8 @@ nav .cod-nav .nav-links.home-nav {
 }
 
 .contact .info {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
 }
 .home {
   background-color: white;
@@ -187,6 +187,9 @@ nav .cod-nav .nav-links.home-nav {
   border: none;
   border-radius: 10px;
   margin-bottom: 2em;
+}
+.right {
+  width: 100%;
 }
 
 .home .top {
