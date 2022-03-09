@@ -1,10 +1,7 @@
 export default function About() {
   return (
     <>
-      <head>
-        <title>Sandile Moremedi | About</title>
-      </head>
-      <div className="about">
+      <div className="about" id="about">
         <div className="info">
           <h1>About Me</h1>
           <p>
@@ -26,9 +23,6 @@ export default function About() {
             self-taught programmers teach themselves how to work with what they
             have.
           </p>
-        </div>
-        <div className="image">
-          <img src="/tokyo.jpg" alt="person walking" />
         </div>
       </div>
     </>

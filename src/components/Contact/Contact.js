@@ -3,10 +3,7 @@ import React from "react";
 function Contact() {
   return (
     <>
-      <head>
-        <title>Sandile Moremedi | Contact</title>
-      </head>
-      <div className="contact">
+      <div className="contact" id="contact">
         <div className="info">
           <h1>Contact</h1>
           <div className="form-parent">
@@ -62,9 +59,6 @@ function Contact() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="image">
-          <img src="/city.jpg" alt="city" />
         </div>
       </div>
     </>

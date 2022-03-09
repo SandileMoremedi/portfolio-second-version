@@ -1,27 +1,34 @@
 export default function Home() {
   return (
     <>
-      <head>
-        <title>Sandile Moremedi | Home</title>
-      </head>
-      <div className="home">
+      <div className="home" id="home">
         <div className="info">
-          <h1>Sandile Moremedi</h1>
-          <p>
-            I am Sandile Moremedi. I am an experienced full-stack web developer,
-            UI/UX designer, and soccer player. I put my passion into my projects
-            and love into my freelance work.
-          </p>
-          <p>
-            My goal is to make projects that help others and websites that give
-            businesses the needed push for displaying their abilities and
-            experiences.
-          </p>
-          <p>
-            So if you need to see my projects, head to the gallery page. Wanna
-            see my freelance work, head to the freelancing page. If you're
-            impressed contact me and let's work together.
-          </p>
+          <div className="top">
+            <div className="text">
+              <h1>Sandile Moremedi</h1>
+              <p>
+                I am Sandile Moremedi. I am an experienced web developer, and
+                soccer player. I put my passion into my projects and love into
+                my freelance work.
+                <br />
+                My goal is to make projects that help others and websites that
+                give businesses the needed push for displaying their abilities
+                and experiences.
+                <br />
+                So if you need to see my projects, head to the gallery page.
+                Wanna see my freelance work, head to the freelancing page. If
+                you're impressed contact me and let's work together.
+              </p>
+              <div className="explore">
+                <a href="#about">
+                  <button>Find Out More</button>
+                </a>
+              </div>
+            </div>
+            <div className="image">
+              <img src="/11_Success-1.jpg" alt="" />
+            </div>
+          </div>
 
           <div className="icons">
             <a href="https://twitter.com/masandza_1">
@@ -34,9 +41,6 @@ export default function Home() {
               <i className="fa-brands fa-linkedin"></i>
             </a>
           </div>
-        </div>
-        <div className="image">
-          <img src="/soccer.jpg" alt="soccer" />
         </div>
       </div>
     </>

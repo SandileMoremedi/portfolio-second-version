@@ -1,10 +1,7 @@
 export default function Gallery() {
   return (
     <>
-      <head>
-        <title>Sandile Moremedi | Gallery</title>
-      </head>
-      <div className="gallery">
+      <div className="gallery" id="gallery">
         <div className="info">
           <h1>The Gallery of Work</h1>
           <p>
@@ -69,9 +66,6 @@ export default function Gallery() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="image">
-          <img src="/error.jpg" alt="phone" />
         </div>
       </div>
     </>

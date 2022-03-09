@@ -3,10 +3,7 @@ import { motion } from "framer-motion";
 function Freelancing() {
   return (
     <>
-      <head>
-        <title>Sandile Moremedi | Freelance</title>
-      </head>
-      <div className="freelancing">
+      <div className="freelancing" id="freelancing">
         <div className="info">
           <h1>Freelancing</h1>
           <p>
@@ -93,9 +90,6 @@ function Freelancing() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="image">
-          <img src="/mountains.jpg" alt="mountain landscape" />
         </div>
       </div>
     </>

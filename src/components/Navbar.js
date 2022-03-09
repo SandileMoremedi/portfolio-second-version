@@ -1,13 +1,12 @@
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-export default function Navbar({ nav, setNav, handleNav }) {
+export default function Navbar({ nav, handleNav }) {
   const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
   return (
     <>
       <nav>
-        <div className="navbar" data-testid="navbar" onClick={handleNav}>
+        <div className="navbar" onClick={handleNav}>
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
@@ -20,11 +19,11 @@ export default function Navbar({ nav, setNav, handleNav }) {
             className="nav-links home-nav"
             onClick={handleNav}
           >
-            <Link to="/">
+            <a href="#about">
               <div className="letters">
                 <span>HOME</span>
               </div>
-            </Link>
+            </a>
           </motion.div>
           <motion.div
             transition={transition}
@@ -32,11 +31,11 @@ export default function Navbar({ nav, setNav, handleNav }) {
             className="nav-links about-nav"
             onClick={handleNav}
           >
-            <Link to="/about">
+            <a href="#about">
               <div className="letters">
                 <span>ABOUT</span>
               </div>
-            </Link>
+            </a>
           </motion.div>
           <motion.div
             transition={transition}
@@ -44,11 +43,11 @@ export default function Navbar({ nav, setNav, handleNav }) {
             className="nav-links gallery-nav"
             onClick={handleNav}
           >
-            <Link to="/gallery">
+            <a href="#gallery">
               <div className="letters">
                 <span>GALLERY</span>
               </div>
-            </Link>
+            </a>
           </motion.div>
           <motion.div
             transition={transition}
@@ -56,11 +55,11 @@ export default function Navbar({ nav, setNav, handleNav }) {
             className="nav-links contact-nav"
             onClick={handleNav}
           >
-            <Link to="/contact">
+            <a href="#contact">
               <div className="letters">
                 <span>CONTACT</span>
               </div>
-            </Link>
+            </a>
           </motion.div>
           <motion.div
             transition={transition}
@@ -68,11 +67,11 @@ export default function Navbar({ nav, setNav, handleNav }) {
             className="nav-links freelancing-nav"
             onClick={handleNav}
           >
-            <Link to="/freelancing">
+            <a href="#freelancing">
               <div className="letters">
                 <span>FREELANCING</span>
               </div>
-            </Link>
+            </a>
           </motion.div>
         </div>
       </nav>
