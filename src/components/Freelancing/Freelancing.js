@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 function Freelancing() {
   return (
     <>
@@ -11,11 +9,7 @@ function Freelancing() {
             I only listed two because most of the other clients did not agree on
             me being able to showcase my work through their websites.
           </p>
-          <motion.div
-            className="freelancing-terms"
-            initial={{ opacity: 0, x: 500 }}
-            animate={{ opacity: 1, x: 0 }}
-          >
+          <div className="freelancing-terms">
             <div className="term">
               <h2>Step 1: Consultation</h2>
               <p>
@@ -45,7 +39,7 @@ function Freelancing() {
                 etc.
               </p>
             </div>
-          </motion.div>
+          </div>
           <h1>Freelance website examples</h1>
           <div className="freelancing-items">
             <div className="item">
